@@ -19,8 +19,8 @@
           alert("Hi there!");
         });
     };
-</script>
-<style>
+  </script>
+  <style>
     .buttons {
       position: absolute;
       bottom: 0;
@@ -44,9 +44,7 @@
     }
   </style>
 <body style="margin: 0; overflow: hidden;">
-
-   <body style="margin : 0px; overflow: hidden;">
-    <div class="buttons">
+     <div class="buttons">
       <button class="say-hi-button">SAY HI!</button>
     </div>
     <a-scene
@@ -82,7 +80,17 @@
                 gltf-model="#animated-asset"
                 class="clickable"
                 gesture-handler
-            ></a-entity>          
+            ></a-entity>
+
+            <!-- Button entity -->
+            <a-plane
+                id="button"
+                position="0 0.2 0" <!-- Adjust the position as needed -->
+                width="0.5"
+                height="0.2"
+                color="blue"
+                class="clickable"
+            ></a-plane>
         </a-marker>
 
         <a-entity camera></a-entity>
